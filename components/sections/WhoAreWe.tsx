@@ -93,7 +93,7 @@ export function WhoAreWe() {
                 boxShadow: `0 12px 28px ${alpha(theme.palette.primary.main, 0.15)}`,
               }}>
                 <Image
-                  src="/berta-homepage/images/founder.jpg"
+                  src="/images/founder.jpg"
                   alt="Fundadora da Berta"
                   fill
                   style={{ objectFit: 'cover' }}

@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  basePath: '/berta-homepage',
+  basePath: '',
   images: {
     unoptimized: true  // This is needed for static export
   },
