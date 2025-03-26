@@ -163,9 +163,8 @@ export function WhoAreWe() {
                   lineHeight: 1.7
                 }}
               >
-                Minha jornada com a endometriose começou aos 15 anos, com dores menstruais intensas que muitos médicos 
-                descartaram como "normais". Após anos buscando respostas, aos 23 anos finalmente recebi o diagnóstico 
-                de endometriose profunda.
+              Minha trajetória com a endometriose começou ainda na adolescência, marcada por dores intensas e um fluxo menstrual muito forte. Aos 20 anos, os sintomas se agravaram: a dor se tornou insuportável e constante. Passei por vários médicos, exames e tratamentos hormonais que pioraram meu quadro, até que, aos 21 anos, finalmente recebi o diagnóstico de endometriose profunda. No entanto, o diagnóstico não foi o fim da luta — enfrentei múltiplas cirurgias, procedimentos e episódios de negligência médica, com profissionais minimizando minha dor e me culpando pelos fracassos dos tratamentos.
+
               </Typography>
               
               <Typography 
@@ -176,9 +175,8 @@ export function WhoAreWe() {
                   lineHeight: 1.7
                 }}
               >
-                Durante meu tratamento, percebi as inúmeras barreiras que mulheres com condições crônicas enfrentam: 
-                longos períodos para diagnóstico, falta de acesso a especialistas qualificados, e tratamentos 
-                fragmentados que não consideram a pessoa como um todo.
+              Mesmo diante da frustração e do cansaço, segui em frente com apoio do meu marido, família e amigos. Recusei a sentença de que não havia mais o que fazer e busquei novas referências e caminhos. Essa teimosia me deu forças para continuar lutando por um tratamento digno e eficaz, algo que percebi estar fora do alcance da maioria das mulheres na mesma situação.
+
               </Typography>
               
               <Typography 
@@ -189,9 +187,7 @@ export function WhoAreWe() {
                   lineHeight: 1.7
                 }}
               >
-                Formada em Ciência Política e com mestrado em andamento também em Ciência Política, uni minha experiência pessoal e 
-                profissional para criar a Berta em 2025 — uma plataforma que oferece acompanhamento 
-                integral e personalizado para pessoas com endometriose e outras condições crônicas.
+               Durante essa jornada, compreendi as enormes dificuldades enfrentadas por quem vive com condições crônicas: diagnósticos tardios, falta de acesso a profissionais capacitados e tratamentos desumanizados. Com base nessa vivência e na minha formação em Ciência Política, decidi transformar essa dor em ação. Assim nasceu a Berta, em 2025 — uma plataforma dedicada ao cuidado integral e baseado em evidências para pessoas com endometriose e outras condições crônicas. 
               </Typography>
               
               <Typography 
