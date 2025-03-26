@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/teomoura/Documents/coding/berta/app/layout":["static/media/7e6a2e30184bb114-s.p.woff2","static/media/07a54048a9278940-s.p.woff2","static/media/dcc209c0b1ab30af-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
