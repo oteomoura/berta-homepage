@@ -13,6 +13,9 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
     - name: Checkout repository
@@ -28,13 +31,11 @@ jobs:
         npm install
         npm run build
 
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2  # Use a valid version, such as v2
-      with:
-        name: build
-        path: ./build
-
-    - name: Deploy to GitHub Pages
+    - name: Upload pages artifact
       uses: actions/upload-pages-artifact@v2
       with:
-        path: ./build
+        path: ./out  # Make sure this points to your Next.js output directory
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
