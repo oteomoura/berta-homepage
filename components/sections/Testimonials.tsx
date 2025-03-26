@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { Avatar, Box, Button, CardContent, Chip, Container, Grid, Rating, Typography, alpha, useTheme } from "@mui/material"
 import ArrowRightIcon from '@mui/icons-material/ArrowRight'
 import { HeroUnderline, TestimonialCard } from "../ui/StyledComponents"

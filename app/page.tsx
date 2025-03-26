@@ -1,14 +1,14 @@
 'use client'
 
 import { Box, Container, useTheme, alpha } from "@mui/material"
-import { Header } from "@/components/sections/Header"
-import { Hero } from "@/components/sections/Hero"
-import { About } from "@/components/sections/About"
-import { Services } from "@/components/sections/Services"
-import { BetaProgram } from "@/components/sections/BetaProgram"
-import { WhoAreWe } from "@/components/sections/WhoAreWe"
-import { CallToAction } from "@/components/sections/CallToAction"
-import { Footer } from "@/components/sections/Footer"
+import { Header } from "../components/sections/Header"
+import { Hero } from "../components/sections/Hero"
+import { About } from "../components/sections/About"
+import { Services } from "../components/sections/Services"
+import { BetaProgram } from "../components/sections/BetaProgram"
+import { WhoAreWe } from "../components/sections/WhoAreWe"
+import { CallToAction } from "../components/sections/CallToAction"
+import { Footer } from "../components/sections/Footer"
 
 export default function LandingPage() {
   const theme = useTheme();

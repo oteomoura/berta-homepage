@@ -1,11 +1,11 @@
 'use client'
+import React from 'react'
 
-import { Box, Chip, Container, Link as MuiLink, Stack, Typography, alpha, useTheme } from "@mui/material"
+import { Box, Chip, Button, Container, Link as MuiLink, Stack, Typography, alpha, useTheme } from "@mui/material"
 import ArrowRightIcon from '@mui/icons-material/ArrowRight'
 import ShieldIcon from '@mui/icons-material/Shield'
 import { MailingListModal } from "../MailingListModal"
 import { useState } from 'react'
-import { Button } from "@/components/ui/button"
 
 export function CallToAction() {
   const theme = useTheme();
@@ -106,7 +106,7 @@ export function CallToAction() {
             <Button
               onClick={() => setModalOpen(true)}
               variant="contained"
-              size="lg"
+              size="large"
               endIcon={<ArrowRightIcon />}
             >
               Fazer avaliação gratuita

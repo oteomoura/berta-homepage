@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { Box, CardContent, Chip, Container, Grid, Typography, alpha, useTheme } from "@mui/material"
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents'
 import PeopleIcon from '@mui/icons-material/People'

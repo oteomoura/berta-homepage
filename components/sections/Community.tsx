@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { Box, Button, Chip, Container, Grid, Link, Typography, alpha, useTheme } from "@mui/material"
 import { HeroUnderline } from "../ui/StyledComponents"
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt'

@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { DM_Sans, Outfit, Playfair_Display } from "next/font/google"
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "../components/theme-provider"
 
 // Modern font for body text
 const dmSans = DM_Sans({

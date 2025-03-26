@@ -1,15 +1,14 @@
 'use client'
 
+import React from 'react'
 import Image from "next/image"
-import { Box, Container, Grid, Stack, Typography, alpha, useTheme } from "@mui/material"
+import { Box, Container, Grid, Button, Stack, Typography, alpha, useTheme } from "@mui/material"
 import ArrowRightIcon from '@mui/icons-material/ArrowRight'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import ShieldIcon from '@mui/icons-material/Shield'
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome'
 import { FeatureCard, HeroUnderline, SparkleChip } from "../ui/StyledComponents"
-import Link from "next/link"
 import { useCallback } from "react"
-import { Button } from "@/components/ui/button"
 
 export function Hero() {
   const theme = useTheme();
@@ -119,7 +118,7 @@ export function Hero() {
               >
                 <Button 
                   variant="contained"
-                  size="lg"
+                  size="large"
                   onClick={() => scrollToSection('programa-beta')}
                   endIcon={<ArrowRightIcon />}
                 >
@@ -127,7 +126,7 @@ export function Hero() {
                 </Button>
                 <Button 
                   variant="outlined"
-                  size="lg"
+                  size="large"
                   onClick={() => scrollToSection('sobre')}
                 >
                   Saiba mais
@@ -205,7 +204,7 @@ export function Hero() {
                   height: { xs: 300, sm: 400, md: 450, lg: 500 },
                 }}>
                   <Image
-                    src="/images/hero-woman.png"
+                    src="/berta-homepage/images/hero-woman.png"
                     alt="Mulher sorrindo em consulta médica"
                     fill
                     style={{ objectFit: 'cover' }}

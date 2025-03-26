@@ -1,13 +1,11 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Link from "next/link"
-import { AppBar, Box, Container, IconButton, Link as MuiLink, Stack, Toolbar, alpha, useScrollTrigger, useTheme } from "@mui/material"
-import MenuIcon from '@mui/icons-material/Menu'
+import { AppBar, Box, Container, Button, Link as MuiLink, Stack, Toolbar, alpha, useTheme } from "@mui/material"
 import FlowerIcon from '@mui/icons-material/LocalFlorist'
 import { Logo, NavLink } from "../ui/StyledComponents"
 import { MailingListModal } from "../MailingListModal"
-import { Button } from "@/components/ui/button"
 
 export function Header() {
   const theme = useTheme();

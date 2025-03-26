@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import Image from "next/image"
 import { Box, Chip, Container, Grid, Typography, alpha, useTheme } from "@mui/material"
 import { HeroUnderline, PartnerLogo } from "../ui/StyledComponents"

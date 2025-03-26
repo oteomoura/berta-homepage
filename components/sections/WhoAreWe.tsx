@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { Box, Chip, Container, Grid, Typography, alpha, useTheme } from "@mui/material"
 import { HeroUnderline } from "../ui/StyledComponents"
 import Image from "next/image"
@@ -92,7 +93,7 @@ export function WhoAreWe() {
                 boxShadow: `0 12px 28px ${alpha(theme.palette.primary.main, 0.15)}`,
               }}>
                 <Image
-                  src="/images/founder.jpg"
+                  src="/berta-homepage/images/founder.jpg"
                   alt="Fundadora da Berta"
                   fill
                   style={{ objectFit: 'cover' }}

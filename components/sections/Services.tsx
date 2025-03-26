@@ -1,11 +1,12 @@
 'use client'
 
-import { Box, Button, CardContent, Chip, Container, Grid, Typography, alpha, useTheme } from "@mui/material"
+import React from 'react'
+import { Box, CardContent, Chip, Container, Grid, Typography, alpha, useTheme } from "@mui/material"
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks'
 import SpaIcon from '@mui/icons-material/Spa'
 import RestaurantIcon from '@mui/icons-material/Restaurant'
-import { CheckItem, CircleIcon, HeroUnderline, ServiceCard } from "../ui/StyledComponents"
+import { HeroUnderline, ServiceCard } from "../ui/StyledComponents"
 
 export function Services() {
   const theme = useTheme();

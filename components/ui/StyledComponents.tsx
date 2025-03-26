@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { Box, Card, Chip, Link as MuiLink, alpha, styled } from "@mui/material"
 
 // Logo styled component
