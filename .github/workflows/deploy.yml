@@ -7,15 +7,10 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
     - name: Checkout repository
@@ -31,11 +26,8 @@ jobs:
         npm install
         npm run build
 
-    - name: Upload pages artifact
-      uses: actions/upload-pages-artifact@v2
-      with:
-        path: ./out  # Make sure this points to your Next.js output directory
-
     - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v2
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: out  # The folder the action should deploy
+        branch: gh-pages  # The branch the action should deploy to
