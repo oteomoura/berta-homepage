@@ -12,7 +12,8 @@ import {
   TextField, 
   Typography, 
   alpha, 
-  useTheme 
+  useTheme,
+  CircularProgress
 } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
 import SendIcon from '@mui/icons-material/Send'
@@ -29,12 +30,43 @@ export function MailingListModal({ open, onClose }: MailingListModalProps) {
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // Here you would typically send the data to your backend or email service
-    console.log('Submitted:', { name, email })
-    setSubmitted(true)
+    setLoading(true)
+    setError('')
+    
+    try {
+      // Replace "your@email.com" with your actual email
+      const response = await fetch('https://formsubmit.co/mourateogenes@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          _subject: "Nova inscrição no Programa Beta Berta"
+        })
+      })
+      
+      if (!response.ok) {
+        throw new Error('Network response was not ok')
+      }
+      
+      // Clear form and show success message
+      setSubmitted(true)
+      setName('')
+      setEmail('')
+    } catch (err) {
+      console.error('Error submitting form:', err)
+      setError('Ocorreu um erro ao enviar seus dados. Por favor, tente novamente.')
+    } finally {
+      setLoading(false)
+    }
   }
   
   const handleReset = () => {
@@ -134,6 +166,7 @@ export function MailingListModal({ open, onClose }: MailingListModalProps) {
                 variant="contained"
                 fullWidth
                 size="large"
+                disabled={loading}
                 sx={{ 
                   py: 1.5,
                   backgroundColor: theme.palette.primary.main,
@@ -145,10 +178,19 @@ export function MailingListModal({ open, onClose }: MailingListModalProps) {
                   transition: 'all 0.3s',
                   boxShadow: `0 8px 16px -4px ${alpha(theme.palette.primary.main, 0.25)}`,
                 }}
-                endIcon={<SendIcon />}
+                endIcon={loading ? <CircularProgress size={20} color="inherit" /> : <SendIcon />}
               >
-                Inscrever-se
+                {loading ? 'Enviando...' : 'Inscrever-se'}
               </Button>
+              
+              {error && (
+                <Typography 
+                  color="error" 
+                  sx={{ mt: 2, textAlign: 'center' }}
+                >
+                  {error}
+                </Typography>
+              )}
               
               <Typography 
                 variant="body2" 

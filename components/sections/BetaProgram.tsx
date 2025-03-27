@@ -15,14 +15,50 @@ export function BetaProgram() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Here you would typically send the email to your backend
-    console.log('Email submitted:', email);
-    setSubmitted(true);
-    setEmail('');
-  };
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setLoading(true)
+    setError('')
+    
+    console.log("nome")
+    console.log(name)
+    console.log("email")
+    console.log(email)
+    try {
+      const response = await fetch('https://formsubmit.co/mourateogenes@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          _subject: "Nova inscrição no Programa Beta Berta"
+        })
+      })
+      
+      console.log("response")
+      console.log(response)
+      
+      if (!response.ok) {
+        throw new Error('Network response was not ok')
+      }
+      
+      // Clear form and show success message
+      setSubmitted(true)
+      setName('')
+      setEmail('')
+    } catch (err) {
+      console.error('Error submitting form:', err)
+      setError('Ocorreu um erro ao enviar seus dados. Por favor, tente novamente.')
+    } finally {
+      setLoading(false)
+    }
+  }
   
   return (
     <Box 
@@ -210,7 +246,7 @@ export function BetaProgram() {
                       label="Seu nome"
                       type="text"
                       variant="outlined"
-                      value={email}
+                      value={name}
                       onChange={(e) => setName(e.target.value)}
                       required
                       sx={{ 
@@ -257,6 +293,7 @@ export function BetaProgram() {
                         boxShadow: `0 10px 15px -3px ${alpha('#000', 0.1)}`,
                       }}
                       endIcon={<SendIcon />}
+                      
                     >
                       Garantir minha vaga
                     </Button>
