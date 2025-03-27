@@ -205,7 +205,7 @@ export function Hero() {
                   height: { xs: 300, sm: 400, md: 450, lg: 500 },
                 }}>
                   <Image
-                    src={`${process.env.NODE_ENV === 'production' ? '/berta-homepage' : ''}/images/hero-woman.png`}
+                    src='/images/hero-woman.png'
                     alt="Mulher sorrindo em consulta médica"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
