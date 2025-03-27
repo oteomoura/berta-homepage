@@ -88,8 +88,8 @@ export function Services() {
           </Box>
         </Box>
 
-        <Grid container spacing={4} sx={{ maxWidth: 1200, mx: 'auto', py: 6 }}>
-          <Grid item xs={12} sm={6} md={3}>
+        <Grid container spacing={4} sx={{ py: 4, display: 'flex', justifyContent: 'center' }}>
+          <Grid item xs={10} sm={6} md={3}>
             <ServiceCard>
               <CardContent sx={{ pt: 5, px: 4, pb: 4 }}>
                 <Box sx={{ 
@@ -119,7 +119,7 @@ export function Services() {
             </ServiceCard>
           </Grid>
           
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={10} sm={6} md={3}>
             <ServiceCard>
               <CardContent sx={{ pt: 5, px: 4, pb: 4 }}>
                 <Box sx={{ 
@@ -148,7 +148,7 @@ export function Services() {
             </ServiceCard>
           </Grid>
           
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={10} sm={6} md={3}>
             <ServiceCard>
               <CardContent sx={{ pt: 5, px: 4, pb: 4 }}>
                 <Box sx={{ 
@@ -177,7 +177,7 @@ export function Services() {
             </ServiceCard>
           </Grid>
           
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={10} sm={6} md={3}>
             <ServiceCard>
               <CardContent sx={{ pt: 5, px: 4, pb: 4 }}>
                 <Box sx={{ 

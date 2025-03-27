@@ -17,7 +17,6 @@ const outfit = Outfit({
   display: "swap",
 })
 
-// Font with personality for logo
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
@@ -27,7 +26,6 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Berta - Plataforma de bem-estar",
   description: "Plataforma de bem-estar para pessoas com endometriose e outras doenças crônicas",
-  generator: 'v0.dev'
 }
 
 export default function RootLayout({

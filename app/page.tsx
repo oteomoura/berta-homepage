@@ -21,11 +21,12 @@ export default function LandingPage() {
           position: 'fixed',
           top: 0,
           right: 0,
-          width: '33%',
+          width: '100%',
           height: '100vh',
           background: `linear-gradient(to bottom, ${alpha(theme.palette.primary.light, 0.1)}, ${alpha(theme.palette.primary.light, 0.2)})`,
           zIndex: -10,
           filter: 'blur(24px)',
+          overflow: 'hidden',
         }}
       />
       <Box 
@@ -57,7 +58,7 @@ export default function LandingPage() {
         {/* Beta Program Section */}
         <BetaProgram />
         
-        {/* Who Are We Section (replacing Community) */}
+        {/* Who Are We Section */}
         <WhoAreWe />
         
         {/* CTA Section */}

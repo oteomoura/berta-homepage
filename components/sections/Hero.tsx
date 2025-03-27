@@ -36,7 +36,8 @@ export function Hero() {
         width: '100%', 
         py: { xs: 3, md: 4, lg: 4, xl: 10 },
         position: 'relative',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        padding: '0 1rem'
       }}
     >
       {/* Background gradients */}
@@ -204,10 +205,11 @@ export function Hero() {
                   height: { xs: 300, sm: 400, md: 450, lg: 500 },
                 }}>
                   <Image
-                    src="/images/hero-woman.png"
+                    src={`${process.env.NODE_ENV === 'production' ? '/berta-homepage' : ''}/images/hero-woman.png`}
                     alt="Mulher sorrindo em consulta médica"
                     fill
-                    style={{ objectFit: 'cover' }}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    style={{ objectFit: 'cover', maxWidth: '100%' }}
                     priority
                   />
                 </Box>

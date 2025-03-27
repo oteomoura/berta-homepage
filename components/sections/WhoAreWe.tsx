@@ -75,7 +75,7 @@ export function WhoAreWe() {
           </Box>
         </Box>
 
-        <Grid container spacing={6} alignItems="center" sx={{ maxWidth: 1200, mx: 'auto' }}>
+        <Grid container spacing={6} alignItems="center" sx={{ padding: '0 1.5rem' }}>
           <Grid item xs={12} md={5}>
             <Box sx={{ 
               display: 'flex', 
@@ -160,7 +160,8 @@ export function WhoAreWe() {
                   color: theme.palette.primary.dark,
                   mb: 3,
                   fontSize: '1rem',
-                  lineHeight: 1.7
+                  lineHeight: 1.7,
+                  textAlign: 'justify'
                 }}
               >
               Minha trajetória com a endometriose começou ainda na adolescência, marcada por dores intensas e um fluxo menstrual muito forte. Aos 20 anos, os sintomas se agravaram: a dor se tornou insuportável e constante. Passei por vários médicos, exames e tratamentos hormonais que pioraram meu quadro, até que, aos 21 anos, finalmente recebi o diagnóstico de endometriose profunda. No entanto, o diagnóstico não foi o fim da luta — enfrentei múltiplas cirurgias, procedimentos e episódios de negligência médica, com profissionais minimizando minha dor e me culpando pelos fracassos dos tratamentos.
@@ -172,7 +173,8 @@ export function WhoAreWe() {
                   color: theme.palette.primary.dark,
                   mb: 3,
                   fontSize: '1rem',
-                  lineHeight: 1.7
+                  lineHeight: 1.7,
+                  textAlign: 'justify'
                 }}
               >
               Mesmo diante da frustração e do cansaço, segui em frente com apoio do meu marido, família e amigos. Recusei a sentença de que não havia mais o que fazer e busquei novas referências e caminhos. Essa teimosia me deu forças para continuar lutando por um tratamento digno e eficaz, algo que percebi estar fora do alcance da maioria das mulheres na mesma situação.
@@ -184,7 +186,8 @@ export function WhoAreWe() {
                   color: theme.palette.primary.dark,
                   mb: 3,
                   fontSize: '1rem',
-                  lineHeight: 1.7
+                  lineHeight: 1.7,
+                  textAlign: 'justify'
                 }}
               >
                Durante essa jornada, compreendi as enormes dificuldades enfrentadas por quem vive com condições crônicas: diagnósticos tardios, falta de acesso a profissionais capacitados e tratamentos desumanizados. Com base nessa vivência e na minha formação em Ciência Política, decidi transformar essa dor em ação. Assim nasceu a Berta, em 2025 — uma plataforma dedicada ao cuidado integral e baseado em evidências para pessoas com endometriose e outras condições crônicas. 
@@ -195,7 +198,8 @@ export function WhoAreWe() {
                   color: theme.palette.primary.dark,
                   fontStyle: 'italic',
                   fontSize: '1rem',
-                  lineHeight: 1.7
+                  lineHeight: 1.7,
+                  textAlign: 'justify'
                 }}
               >
                 "Meu objetivo é que nenhuma mulher precise esperar anos por um diagnóstico ou se sinta desamparada 

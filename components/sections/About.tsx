@@ -56,7 +56,9 @@ export function About() {
                 color: theme.palette.primary.dark,
                 fontSize: { md: '1.125rem' },
                 maxWidth: 900,
-                mx: 'auto'
+                mx: 'auto',
+                textAlign: 'justify',
+                mt: 4
               }}
             >
             Chega de informação pela metade e afirmações rasas. Na Berta, nós aliamos experiência própria com o que há de mais avançado na tecnologia médica para endometriose e dor crônica.
@@ -64,11 +66,11 @@ export function About() {
           </Box>
         </Box>
 
-        <Grid container spacing={4} sx={{ maxWidth: 1200, mx: 'auto', py: 6 }}>
-          <Grid item xs={12} md={4}>
+        <Grid container spacing={4} sx={{ py: 2, display: 'flex', justifyContent: 'center' }}>
+          <Grid item xs={10} md={4}>
             <IconCard>
-              <CardContent sx={{ pt: 4 }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2 }}>
+              <CardContent>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2, padding: '1rem', textAlign: 'justify' }}>
                   <CircleIcon sx={{ p: 1.5 }}>
                     <EmojiEventsIcon sx={{ fontSize: 32 }} />
                   </CircleIcon>
@@ -84,10 +86,10 @@ export function About() {
             </IconCard>
           </Grid>
 
-          <Grid item xs={12} md={4}>
+          <Grid item xs={10} md={4}>
             <IconCard>
               <CardContent sx={{ pt: 4 }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2 }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2, padding: '1rem', textAlign: 'justify' }}>
                   <CircleIcon sx={{ p: 1.5 }}>
                     <PeopleIcon sx={{ fontSize: 32 }} />
                   </CircleIcon>
@@ -103,10 +105,10 @@ export function About() {
             </IconCard>
           </Grid>
 
-          <Grid item xs={12} md={4}>
+          <Grid item xs={10} md={4}>
             <IconCard>
               <CardContent sx={{ pt: 4 }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2 }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2, padding: '1rem', textAlign: 'justify' }}>
                   <CircleIcon sx={{ p: 1.5 }}>
                     <ShieldIcon sx={{ fontSize: 32 }} />
                   </CircleIcon>

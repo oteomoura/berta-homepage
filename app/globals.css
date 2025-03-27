@@ -12,6 +12,14 @@ html {
 
 html, body {
   scroll-padding-top: 80px; /* Add padding for fixed header */
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {

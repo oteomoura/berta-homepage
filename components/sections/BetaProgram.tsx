@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { Box, Button, CardContent, Chip, Container, Grid, TextField, Typography, alpha, useTheme } from "@mui/material"
+import { Box, Button, Chip, Container, Grid, TextField, Typography, alpha, useTheme } from "@mui/material"
 import SendIcon from '@mui/icons-material/Send'
 import ArrowRightIcon from '@mui/icons-material/ArrowRight'
 import StarIcon from '@mui/icons-material/Star'
@@ -95,7 +95,8 @@ export function BetaProgram() {
                 color: theme.palette.primary.dark,
                 fontSize: { md: '1.125rem' },
                 maxWidth: 900,
-                mx: 'auto'
+                mx: 'auto',
+                mt: 2
               }}
             >
               Junte-se ao nosso programa beta e ajude a moldar o futuro do cuidado para mulheres com endometriose.
@@ -103,7 +104,7 @@ export function BetaProgram() {
           </Box>
         </Box>
 
-        <Grid container spacing={5} sx={{ maxWidth: 1200, mx: 'auto', py: 6 }}>
+        <Grid container spacing={4} sx={{ py: 6 }}>
           <Grid item xs={12} md={6}>
             <Box sx={{ height: '100%' }}>
               <Typography 
@@ -121,7 +122,6 @@ export function BetaProgram() {
               <Box sx={{ 
                 display: 'flex', 
                 flexDirection: 'column', 
-                gap: 3, 
                 p: { xs: 2, md: 4 },
                 border: `1px solid ${alpha(theme.palette.primary.main, 0.1)}`,
                 borderRadius: 2,

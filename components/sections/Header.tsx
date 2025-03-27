@@ -22,8 +22,12 @@ export function Header() {
         backgroundColor: alpha('#fff', 0.8),
       }}
     >
-      <Container>
-        <Toolbar disableGutters sx={{ height: 64 }}>
+      <Container sx={{ 
+        position: 'relative', 
+        zIndex: 1,
+        px: { xs: 2, sm: 3, md: 4 } // Smaller padding on mobile (xs)
+      }}>
+        <Toolbar sx={{ height: 64 }}>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 6, flex: 1 }}>
             <Link href="/" legacyBehavior>
               <MuiLink component="a" underline="none" sx={{ display: 'flex', alignItems: 'center' }}>

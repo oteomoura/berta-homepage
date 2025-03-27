@@ -25,6 +25,7 @@ export function Footer() {
         borderColor: alpha(theme.palette.primary.main, 0.2),
         backgroundColor: theme.palette.common.white,
         position: 'relative',
+        padding: '1rem'
       }}
     >
       <Box sx={{
@@ -38,7 +39,7 @@ export function Footer() {
       }} />
       
       <Container sx={{ position: 'relative', zIndex: 1 }}>
-        <Grid container spacing={4} sx={{ mb: 4 }}>
+        <Grid container spacing={4} sx={{ mb: 4, mt: 2  }}>
           <Grid item xs={12} md={3}>
             <Box sx={{ mb: 3 }}>
               <Link href="/" legacyBehavior>
