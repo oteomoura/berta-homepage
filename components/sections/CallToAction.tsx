@@ -30,7 +30,6 @@ export function CallToAction() {
           left: 0,
           width: '100%',
           height: '100%',
-          backgroundImage: 'url("/images/pattern-bg.png")',
           backgroundRepeat: 'repeat',
           opacity: 0.05,
           zIndex: 0,

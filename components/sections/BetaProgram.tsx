@@ -372,13 +372,6 @@ export function BetaProgram() {
           </Typography>
         </Box>
       </Container>
-
-      <Image 
-        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/pattern-bg.png`}
-        alt="Background pattern"
-        width={500}
-        height={500}
-      />
     </Box>
   )
 } 
