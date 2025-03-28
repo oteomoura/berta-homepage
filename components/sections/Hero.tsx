@@ -16,7 +16,7 @@ export function Hero() {
   // Custom smooth scroll function
   const scrollToSection = useCallback((id: string) => {
     const element = document.getElementById(id);
-    if (element) {
+    if (element && typeof window !== 'undefined') {
       // Calculate header height for offset (approximately 80px)
       const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;

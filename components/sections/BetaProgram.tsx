@@ -12,11 +12,11 @@ import { useState } from "react"
 
 export function BetaProgram() {
   const theme = useTheme();
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+  const [name, setName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [submitted, setSubmitted] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string>('');
   
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -228,7 +228,11 @@ export function BetaProgram() {
               </Typography>
               
               {!submitted ? (
-                <Box component="form" onSubmit={handleSubmit}>
+                <Box 
+                  component="form" 
+                  onSubmit={handleSubmit}
+                  suppressHydrationWarning
+                >
                   <Box sx={{ mb: 4 }}>
                     <Typography 
                       sx={{ 
