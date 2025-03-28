@@ -6,21 +6,21 @@ import { ThemeProvider } from "../components/theme-provider"
 // Modern font for body text
 const dmSans = DM_Sans({
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
   variable: "--font-dm-sans",
-  display: "swap",
 })
 
 // Font for navbar
 const outfit = Outfit({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-outfit",
-  display: "swap",
 })
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-playfair",
-  display: "swap",
 })
 
 export const metadata: Metadata = {

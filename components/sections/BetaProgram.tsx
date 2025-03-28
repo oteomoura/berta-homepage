@@ -9,6 +9,7 @@ import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety'
 import SupportAgentIcon from '@mui/icons-material/SupportAgent'
 import { HeroUnderline, ServiceCard } from "../ui/StyledComponents"
 import { useState } from "react"
+import Image from "next/image"
 
 export function BetaProgram() {
   const theme = useTheme();
@@ -371,6 +372,13 @@ export function BetaProgram() {
           </Typography>
         </Box>
       </Container>
+
+      <Image 
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/pattern-bg.png`}
+        alt="Background pattern"
+        width={500}
+        height={500}
+      />
     </Box>
   )
 } 

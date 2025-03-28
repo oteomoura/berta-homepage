@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  berta-web:
+    build: .
+    container_name: berta-web
+    ports:
+      - "3001:3000"  # Using 3001 to avoid conflict with endobot
+    env_file:
+      - .env
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/.next
+    restart: always 
