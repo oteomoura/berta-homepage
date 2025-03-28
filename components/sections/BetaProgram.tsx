@@ -29,7 +29,7 @@ export function BetaProgram() {
     console.log("email")
     console.log(email)
     try {
-      const response = await fetch('https://formsubmit.co/mourateogenes@gmail.com', {
+      const response = await fetch('https://formsubmit.co/a3f5fe9fc198adeae3cc97ad435dbaeb', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
